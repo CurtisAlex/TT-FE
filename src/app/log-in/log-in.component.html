@@ -1,0 +1,17 @@
+<div style="display: flex; flex-direction: column; justify-content: center; padding: 24px; background-color:blue; height:100%;">
+
+    <div style="display: flex; justify-content: center; flex-direction: column;">
+        <img src="../../assets/logo-with-name.png" alt="Logo" style="object-fit:cover; height: 260px;">
+        <p style="color: white; text-align: center;">
+            Sign up to get advice on your risky texts & follow strangers' tea
+        </p>
+    </div>
+
+    <div style="display: flex; flex-direction: column; justify-content: center;">
+        <button mat-raised-button color="primary" style="margin-bottom: 16px;" (click)="googleSignIn()">Sign in with Google</button>
+        <button mat-raised-button color="primary" style="margin-bottom: 16px;" (click)="appleSignIn()">Sign in with Apple</button>
+        <p style="text-align:center; color: white;">Or</p>
+        <button mat-button (click)="signUp()">Sign Up with Email</button>
+    </div>
+
+</div>
