@@ -1,0 +1,64 @@
+<!-- <div (swipe)="onSwipe($event)" style="min-width: 100%; min-height: 100%; border: 1px solid red;">
+    <div *ngFor="let conversation of conversations$ | async; index as i">
+        <conversation
+            *ngIf="i == (activeConversationId$ | async)"
+            [conversation]="conversation" [hideActionBar]="true"
+            [@cardAnimator]="activeAnimationState">
+        </conversation>
+    </div> -->
+
+
+    <!-- <conversation
+    *ngIf="prevActiveConversation$ | async as prevConversation" 
+    [conversation]="prevConversation" [hideActionBar]="true"
+    [@cardAnimator]="prevActiveAnimationState"
+    (swipeRight)="startAnimation('slideInRight')">
+    </conversation> -->
+
+    <!-- <conversation
+        *ngIf="activeConversation$ | async as activeConversation" 
+        [conversation]="activeConversation" [hideActionBar]="true"
+        [@cardAnimator]="activeAnimationState"
+        (@cardAnimator.done)="resetAnimationState()"
+        (swipeleft)="startAnimation('slideOutLeft')"
+        (swipeRight)="startAnimation('slideOutRight')">
+    </conversation> -->
+
+    <!-- <conversation
+    *ngIf="nextActiveConversation$ | async as nextConversation" 
+    [conversation]="nextConversation" [hideActionBar]="true"
+    [@cardAnimator]="nextActiveAnimationState">
+    </conversation> -->
+<!-- </div> -->
+
+<div class="container">
+    <carousel [slides]="conversations$ | async"></carousel>
+</div>
+
+<!-- <open-close></open-close> -->
+
+<!--add this in your app.component.html -->
+<!-- <div class="swipe" (swipe)="onSwipe($event)" style="max-width: 600px; position: relative; margin: 0 auto;">
+    <div style="width:100%; min-height: 100px; border: 1px solid red; display: block;" 
+        [@cardAnimator]="animationState"
+        (@cardAnimator.done)="resetAnimationState()"
+        (swipeleft)="startAnimation('slideOutLeft')"
+        (swipeRight)="startAnimation('slideOutRight')">
+        <h1>Swipe Gesture</h1>
+        <p>Works with both mouse and touch.</p>
+        <h5 [innerHTML]="direction"></h5>
+    </div>
+    <div style="width:100%; min-height: 100px; border: 1px solid red; transform: translate3d(-100%, 0, 0);  display: block;" 
+    [@cardAnimator]="animationState"
+    (@cardAnimator.done)="resetAnimationState()"
+    (swipeleft)="startAnimation('slideOutLeft')"
+    (swipeRight)="startAnimation('slideOutRight')">
+    <h1>Swipe Gesture</h1>
+    <p>Works with both mouse and touch.</p>
+    <h5 [innerHTML]="direction"></h5>
+</div>
+</div> -->
+
+<!-- <div class="container">
+    <carousel [slides]="slides"></carousel>
+</div> -->

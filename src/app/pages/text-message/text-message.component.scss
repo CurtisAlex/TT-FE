@@ -1,0 +1,52 @@
+.additional-options-container {
+    border-radius: 5px;
+    margin: 0 8px;
+    border: 1px solid black;
+
+    button {
+        padding: 4px;
+    }
+}
+
+.sender-additional-options-container {
+    align-self: flex-end;
+    border-bottom-right-radius: 0;
+}
+
+.reciever-additional-options-container {
+    align-self: flex-start;
+    border-bottom-left-radius: 0;
+}
+
+.text-message-container {
+    padding: 8px 12px 8px 12px;
+    border-radius: 25px;
+    color: black;
+    margin: 0 8px 8px 8px;
+}
+
+.sender-container {
+    background-color: #36DF62;
+    align-self: flex-end;
+    margin-left: 10%;
+    color: #FFFFFF;
+    border-bottom-right-radius: 0%;
+}
+
+.sender-edit-container {
+    border-top-right-radius: 0%;
+}
+
+.reciever-container {
+    background-color: #E9E9EB;
+    align-self: flex-start;
+    margin-right: 10%;
+    color: #0F0F0F;
+    border-bottom-left-radius: 0%;
+}
+
+.reciever-edit-container {
+    border-top-left-radius: 0%;
+}
+
+

@@ -1,0 +1,22 @@
+.conversation-container {
+
+    background-color: #FFFFFF;
+
+    .header {
+        background-color: #F8F8F8;
+        text-align: center;
+        color: black;
+        padding: 12px 0;
+        border-bottom: 1px solid #E3E3E3;
+
+        h3 {
+            margin: 0;
+        }
+    }
+
+    text-message {
+        display: flex;
+        flex-direction: column;
+    }
+}
+

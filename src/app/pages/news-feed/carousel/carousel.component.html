@@ -1,0 +1,11 @@
+<div class="carousel" (swipe)="onSwipe($event)">
+    <ng-container *ngFor="let slide of slides; let i = index">
+        <conversation
+            *ngIf="i === currentSlide"
+            [conversation]="slide"
+            [hideActionBar]="true"
+            class="slide"
+            [@carouselAnimation]="{value: slide, params: { slideInLocation: slideInLocation, slideOutLocation: slideOutLocation }}"
+        />
+    </ng-container>
+</div>

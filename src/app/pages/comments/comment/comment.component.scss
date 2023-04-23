@@ -1,0 +1,25 @@
+
+.comment-container {
+    padding: 4px;
+    margin-bottom: 4px;
+
+    .header {
+        .username {
+            color: #1A1A1B;
+            font-weight: bold;
+        }
+
+        .time {
+            color: #7C7C7C;
+        }
+    }
+
+    .body {
+
+    }
+
+    .footer {
+        display: flex;
+        justify-content: flex-end;
+    }
+}

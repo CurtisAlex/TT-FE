@@ -1,0 +1,32 @@
+<!-- <div class="text-message-container"> -->
+    <div 
+        *ngIf="showAdditionalOptions" 
+        class="additional-options-container"
+        [ngClass]="{
+            'sender-additional-options-container': text.party == 0,
+            'reciever-additional-options-container': text.party == 1
+        }">
+        <!-- Focus only on the comments button/reply button -->
+        <!-- <button mat-icon-button (click)="upvote()">
+            <mat-icon>keyboard_arrow_up</mat-icon>
+        </button>
+        <button mat-icon-button (click)="downvote()">
+            <mat-icon>keyboard_arrow_down</mat-icon>
+        </button> -->
+        <button mat-icon-button (click)="comment()">
+            <mat-icon>comment</mat-icon>
+        </button>
+    </div>
+    <div 
+        class="text-message-container" 
+        [ngClass]="{
+            'sender-container': text.party == 0, 
+            'reciever-container': text.party == 1,
+            'sender-edit-container': showAdditionalOptions && text.party == 0,
+            'reciever-edit-container': showAdditionalOptions && text.party == 1
+        }"
+        (click)="toggleAdditionalOptions()">
+        <!-- contenteditable="true" - to make each text box editable, just need to figure out how to update the change through out the code -->
+        {{text.message}}
+    </div>
+<!-- </div> -->

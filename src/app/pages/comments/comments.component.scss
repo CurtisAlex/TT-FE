@@ -1,0 +1,21 @@
+.comments-container {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border: 1px solid black;
+
+    .title-bar {
+        padding: 8px;
+        border-bottom: 1px solid #EEEEEE;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .comments-section {
+        
+    }
+
+    .cta-bar {
+
+    }
+
+}

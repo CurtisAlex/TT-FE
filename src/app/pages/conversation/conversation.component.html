@@ -1,0 +1,15 @@
+<div class="conversation-container">
+    <div class="header">
+        <!-- Title box -->
+        <h3>{{conversation.title}}</h3>
+    </div>
+    <div>
+        <text-message *ngFor="let text of conversation.texts" [text]="text"></text-message>
+    </div>
+    <div class="interaction-bar" *ngIf="!hideActionBar">
+        <mat-button-toggle value="like" (change)="toggleLike($event)">
+            Like
+        </mat-button-toggle>
+        {{conversation.likes}}
+    </div>
+</div>
